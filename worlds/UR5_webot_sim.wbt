@@ -1,0 +1,1102 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/fire_extinguisher/protos/FireExtinguisher.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/school_furniture/protos/Blackboard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/tools/protos/PaintBucket.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/VarnishedPine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/freight/protos/IntermodalOfficeContainer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/chairs/protos/OfficeChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/universal_robots/protos/UR5e.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/devices/robotiq/protos/Robotiq3fGripper.proto"
+
+WorldInfo {
+  info [
+    ""
+  ]
+  contactProperties [
+    ContactProperties {
+      material1 "arena"
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.3188525876794833 -0.061390155781277676 -0.9458140811508613 3.7934433444728897
+  position 4.06824170963267 -0.331153954754571 3.057260890242433
+}
+TexturedBackground {
+  texture "factory"
+}
+TexturedBackgroundLight {
+  texture "factory"
+}
+Pedestrian {
+  translation 6.01814 0.289776 1.27
+  rotation 0 0 1 1.0472
+}
+Desk {
+  translation 2.74452 3.11582 -0.00919876491348992
+  rotation 0.7473689530319714 -0.6487840834508276 -0.14324406132459577 4.4347260932278976e-17
+  physics Physics {
+  }
+}
+Wall {
+  translation 8.84657 -12.0461 1.77636e-15
+  rotation 0 0 1 1.5708
+  name "wall(1)"
+  size 0.2 60 2.4
+}
+PaintBucket {
+  translation 1.9000050043557597 -2.7899999015441894 -0.002321064019366291
+  rotation 0.016108479407853087 -0.9998702498240288 -2.0199040284741605e-05 0.0038280974816910346
+}
+Cabinet {
+  translation -5.27367 4.11358 0
+}
+Cabinet {
+  translation -5.27367 3.17358 0
+  name "cabinet(1)"
+}
+Blackboard {
+  translation -5.4452 -3.3242 1.67
+}
+Wall {
+  translation -5.66824 -5.59486 1.77636e-15
+  size 0.2 60 2.4
+}
+Solid {
+  translation 2.05883 1.71509 1.08941
+  rotation 0.7161929289331153 0.6979023468003737 5.3635220053471434e-05 0.00030989312636978345
+  children [
+    Connector {
+      model "robot_connect"
+      autoLock TRUE
+      distanceTolerance 0.2
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/tagged_wall.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            2.4492127076447545e-18 -0.04 0.15, 0.01035276180410083 -0.038637033051562734 0.15, 0.019999999999999997 -0.034641016151377546 0.15, 0.028284271247461905 -0.028284271247461898 0.15, 0.034641016151377546 -0.02 0.15, 0.03863703305156273 -0.010352761804100837 0.15, 0.04 0 0.15, 0.038637033051562734 0.010352761804100828 0.15, 0.034641016151377546 0.019999999999999993 0.15, 0.028284271247461905 0.028284271247461898 0.15, 0.020000000000000014 0.03464101615137754 0.15, 0.010352761804100838 0.03863703305156273 0.15, 2.4492127076447545e-18 0.04 0.15, -0.010352761804100816 0.038637033051562734 0.15, -0.01999999999999999 0.034641016151377546 0.15, -0.028284271247461884 0.028284271247461915 0.15, -0.03464101615137754 0.020000000000000014 0.15, -0.03863703305156273 0.010352761804100859 0.15, -0.04 4.898425415289509e-18 0.15, -0.038637033051562734 -0.010352761804100814 0.15, -0.03464101615137756 -0.019999999999999976 0.15, -0.02828427124746191 -0.028284271247461898 0.15, -0.020000000000000018 -0.03464101615137754 0.15, -0.01035276180410086 -0.03863703305156273 0.15, -7.347638122934263e-18 -0.04 0.15, 1.2455597080613033e-18 -0.020342205545047582 0.15, 0.005264950214448417 -0.019649061699642152 0.15, 0.01017110277252379 -0.01761686677101588 0.15, 0.014384111485193736 -0.014384111485193734 0.15, 0.017616866771015878 -0.010171102772523791 0.15, 0.019649061699642152 -0.005264950214448421 0.15, 0.020342205545047582 0 0.15, 0.019649061699642152 0.0052649502144484165 0.15, 0.01761686677101588 0.010171102772523788 0.15, 0.014384111485193736 0.014384111485193734 0.15, 0.010171102772523798 0.017616866771015875 0.15, 0.005264950214448423 0.019649061699642152 0.15, 1.2455597080613033e-18 0.020342205545047582 0.15, -0.00526495021444841 0.019649061699642156 0.15, -0.010171102772523786 0.01761686677101588 0.15, -0.014384111485193727 0.014384111485193743 0.15, -0.017616866771015875 0.010171102772523798 0.15, -0.01964906169964215 0.005264950214448432 0.15, -0.020342205545047582 2.4911194161226065e-18 0.15, -0.019649061699642156 -0.0052649502144484096 0.15, -0.01761686677101589 -0.010171102772523779 0.15, -0.014384111485193737 -0.014384111485193734 0.15, -0.0101711027725238 -0.017616866771015875 0.15, -0.005264950214448434 -0.01964906169964215 0.15, -3.7366791241839094e-18 -0.020342205545047582 0.15, 2.4492127076447545e-18 -0.04 -0.15, 0.01035276180410083 -0.038637033051562734 -0.15, 0.019999999999999997 -0.034641016151377546 -0.15, 0.028284271247461905 -0.028284271247461898 -0.15, 0.034641016151377546 -0.02 -0.15, 0.03863703305156273 -0.010352761804100837 -0.15, 0.04 0 -0.15, 0.038637033051562734 0.010352761804100828 -0.15, 0.034641016151377546 0.019999999999999993 -0.15, 0.028284271247461905 0.028284271247461898 -0.15, 0.020000000000000014 0.03464101615137754 -0.15, 0.010352761804100838 0.03863703305156273 -0.15, 2.4492127076447545e-18 0.04 -0.15, -0.010352761804100816 0.038637033051562734 -0.15, -0.01999999999999999 0.034641016151377546 -0.15, -0.028284271247461884 0.028284271247461915 -0.15, -0.03464101615137754 0.020000000000000014 -0.15, -0.03863703305156273 0.010352761804100859 -0.15, -0.04 4.898425415289509e-18 -0.15, -0.038637033051562734 -0.010352761804100814 -0.15, -0.03464101615137756 -0.019999999999999976 -0.15, -0.02828427124746191 -0.028284271247461898 -0.15, -0.020000000000000018 -0.03464101615137754 -0.15, -0.01035276180410086 -0.03863703305156273 -0.15, -7.347638122934263e-18 -0.04 -0.15, 1.2455597080613033e-18 -0.020342205545047582 -0.15, 0.005264950214448417 -0.019649061699642152 -0.15, 0.01017110277252379 -0.01761686677101588 -0.15, 0.014384111485193736 -0.014384111485193734 -0.15, 0.017616866771015878 -0.010171102772523791 -0.15, 0.019649061699642152 -0.005264950214448421 -0.15, 0.020342205545047582 0 -0.15, 0.019649061699642152 0.0052649502144484165 -0.15, 0.01761686677101588 0.010171102772523788 -0.15, 0.014384111485193736 0.014384111485193734 -0.15, 0.010171102772523798 0.017616866771015875 -0.15, 0.005264950214448423 0.019649061699642152 -0.15, 1.2455597080613033e-18 0.020342205545047582 -0.15, -0.00526495021444841 0.019649061699642156 -0.15, -0.010171102772523786 0.01761686677101588 -0.15, -0.014384111485193727 0.014384111485193743 -0.15, -0.017616866771015875 0.010171102772523798 -0.15, -0.01964906169964215 0.005264950214448432 -0.15, -0.020342205545047582 2.4911194161226065e-18 -0.15, -0.019649061699642156 -0.0052649502144484096 -0.15, -0.01761686677101589 -0.010171102772523779 -0.15, -0.014384111485193737 -0.014384111485193734 -0.15, -0.0101711027725238 -0.017616866771015875 -0.15, -0.005264950214448434 -0.01964906169964215 -0.15, -3.7366791241839094e-18 -0.020342205545047582 -0.15
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            0.5 0, 0.6294095225512604 -0.017037086855465844, 0.75 -0.06698729810778065, 0.8535533905932737 -0.14644660940672627, 0.9330127018922193 -0.25, 0.9829629131445341 -0.3705904774487395, 1 -0.5, 0.9829629131445341 -0.6294095225512604, 0.9330127018922194 -0.7499999999999999, 0.8535533905932737 -0.8535533905932737, 0.7500000000000002 -0.9330127018922192, 0.6294095225512605 -0.9829629131445341, 0.5 -1, 0.3705904774487398 -0.9829629131445342, 0.2500000000000001 -0.9330127018922194, 0.14644660940672644 -0.853553390593274, 0.06698729810778076 -0.7500000000000002, 0.017037086855465955 -0.6294095225512607, 0 -0.5000000000000001, 0.01703708685546579 -0.37059047744873985, 0.06698729810778048 -0.25000000000000033, 0.14644660940672616 -0.14644660940672627, 0.24999999999999978 -0.06698729810778081, 0.37059047744873924 -0.017037086855465955, 0.4999999999999999 0, 0.5 -0.24572243068690525, 0.5658118776806053 -0.2543867287544731, 0.6271387846565474 -0.27978916536230153, 0.6798013935649216 -0.32019860643507836, 0.7202108346376984 -0.3728612153434526, 0.7456132712455269 -0.43418812231939474, 0.7542775693130948 -0.5, 0.7456132712455269 -0.5658118776806051, 0.7202108346376985 -0.6271387846565473, 0.6798013935649216 -0.6798013935649216, 0.6271387846565475 -0.7202108346376984, 0.5658118776806053 -0.7456132712455269, 0.5 -0.7542775693130948, 0.43418812231939485 -0.7456132712455269, 0.3728612153434527 -0.7202108346376985, 0.32019860643507847 -0.6798013935649218, 0.2797891653623016 -0.6271387846565475, 0.25438672875447316 -0.5658118776806054, 0.24572243068690525 -0.5, 0.2543867287544731 -0.43418812231939485, 0.2797891653623014 -0.3728612153434528, 0.3201986064350783 -0.32019860643507836, 0.3728612153434525 -0.2797891653623016, 0.4341881223193946 -0.25438672875447316, 0.49999999999999994 -0.24572243068690525, 0.5 0, 0.6294095225512604 0.017037086855465844, 0.75 0.06698729810778065, 0.8535533905932737 0.14644660940672627, 0.9330127018922193 0.25, 0.9829629131445341 0.3705904774487395, 1 0.5, 0.9829629131445341 0.6294095225512604, 0.9330127018922194 0.7499999999999999, 0.8535533905932737 0.8535533905932737, 0.7500000000000002 0.9330127018922192, 0.6294095225512605 0.9829629131445341, 0.5 1, 0.3705904774487398 0.9829629131445342, 0.2500000000000001 0.9330127018922194, 0.14644660940672644 0.853553390593274, 0.06698729810778076 0.7500000000000002, 0.017037086855465955 0.6294095225512607, 0 0.5000000000000001, 0.01703708685546579 0.37059047744873985, 0.06698729810778048 0.25000000000000033, 0.14644660940672616 0.14644660940672627, 0.24999999999999978 0.06698729810778081, 0.37059047744873924 0.017037086855465955, 0.4999999999999999 0, 0.5 0.24572243068690525, 0.5658118776806053 0.2543867287544731, 0.6271387846565474 0.27978916536230153, 0.6798013935649216 0.32019860643507836, 0.7202108346376984 0.3728612153434526, 0.7456132712455269 0.43418812231939474, 0.7542775693130948 0.5, 0.7456132712455269 0.5658118776806051, 0.7202108346376985 0.6271387846565473, 0.6798013935649216 0.6798013935649216, 0.6271387846565475 0.7202108346376984, 0.5658118776806053 0.7456132712455269, 0.5 0.7542775693130948, 0.43418812231939485 0.7456132712455269, 0.3728612153434527 0.7202108346376985, 0.32019860643507847 0.6798013935649218, 0.2797891653623016 0.6271387846565475, 0.25438672875447316 0.5658118776806054, 0.24572243068690525 0.5, 0.2543867287544731 0.43418812231939485, 0.2797891653623014 0.3728612153434528, 0.3201986064350783 0.32019860643507836, 0.3728612153434525 0.2797891653623016, 0.4341881223193946 0.25438672875447316, 0.49999999999999994 0.24572243068690525, -0.5 1, -0.4583333333333333 1, -0.4166666666666667 1, -0.375 1, -0.33333333333333337 1, -0.29166666666666663 1, -0.25 1, -0.20833333333333331 1, -0.16666666666666669 1, -0.125 1, -0.08333333333333331 1, -0.041666666666666685 1, 0 1, 0.04166666666666663 1, 0.08333333333333337 1, 0.125 1, 0.16666666666666663 1, 0.20833333333333337 1, 0.25 1, 0.29166666666666663 1, 0.33333333333333337 1, 0.375 1, 0.41666666666666663 1, 0.45833333333333337 1, 0.5 1, -0.5 0, -0.4583333333333333 0, -0.4166666666666667 0, -0.375 0, -0.33333333333333337 0, -0.29166666666666663 0, -0.25 0, -0.20833333333333331 0, -0.16666666666666669 0, -0.125 0, -0.08333333333333331 0, -0.041666666666666685 0, 0 0, 0.04166666666666663 0, 0.08333333333333337 0, 0.125 0, 0.16666666666666663 0, 0.20833333333333337 0, 0.25 0, 0.29166666666666663 0, 0.33333333333333337 0, 0.375 0, 0.41666666666666663 0, 0.45833333333333337 0, 0.5 0
+          ]
+        }
+        coordIndex [
+          0, 1, 26, 25, -1, 1, 2, 27, 26, -1, 2, 3, 28, 27, -1, 3, 4, 29, 28, -1, 4, 5, 30, 29, -1, 5, 6, 31, 30, -1, 6, 7, 32, 31, -1, 7, 8, 33, 32, -1, 8, 9, 34, 33, -1, 9, 10, 35, 34, -1, 10, 11, 36, 35, -1, 11, 12, 37, 36, -1, 12, 13, 38, 37, -1, 13, 14, 39, 38, -1, 14, 15, 40, 39, -1, 15, 16, 41, 40, -1, 16, 17, 42, 41, -1, 17, 18, 43, 42, -1, 18, 19, 44, 43, -1, 19, 20, 45, 44, -1, 20, 21, 46, 45, -1, 21, 22, 47, 46, -1, 22, 23, 48, 47, -1, 23, 24, 49, 48, -1, 50, 75, 76, 51, -1, 51, 76, 77, 52, -1, 52, 77, 78, 53, -1, 53, 78, 79, 54, -1, 54, 79, 80, 55, -1, 55, 80, 81, 56, -1, 56, 81, 82, 57, -1, 57, 82, 83, 58, -1, 58, 83, 84, 59, -1, 59, 84, 85, 60, -1, 60, 85, 86, 61, -1, 61, 86, 87, 62, -1, 62, 87, 88, 63, -1, 63, 88, 89, 64, -1, 64, 89, 90, 65, -1, 65, 90, 91, 66, -1, 66, 91, 92, 67, -1, 67, 92, 93, 68, -1, 68, 93, 94, 69, -1, 69, 94, 95, 70, -1, 70, 95, 96, 71, -1, 71, 96, 97, 72, -1, 72, 97, 98, 73, -1, 73, 98, 99, 74, -1, 25, 26, 76, 75, -1, 26, 27, 77, 76, -1, 27, 28, 78, 77, -1, 28, 29, 79, 78, -1, 29, 30, 80, 79, -1, 30, 31, 81, 80, -1, 31, 32, 82, 81, -1, 32, 33, 83, 82, -1, 33, 34, 84, 83, -1, 34, 35, 85, 84, -1, 35, 36, 86, 85, -1, 36, 37, 87, 86, -1, 37, 38, 88, 87, -1, 38, 39, 89, 88, -1, 39, 40, 90, 89, -1, 40, 41, 91, 90, -1, 41, 42, 92, 91, -1, 42, 43, 93, 92, -1, 43, 44, 94, 93, -1, 44, 45, 95, 94, -1, 45, 46, 96, 95, -1, 46, 47, 97, 96, -1, 47, 48, 98, 97, -1, 48, 49, 99, 98, -1, 0, 50, 51, 1, -1, 1, 51, 52, 2, -1, 2, 52, 53, 3, -1, 3, 53, 54, 4, -1, 4, 54, 55, 5, -1, 5, 55, 56, 6, -1, 6, 56, 57, 7, -1, 7, 57, 58, 8, -1, 8, 58, 59, 9, -1, 9, 59, 60, 10, -1, 10, 60, 61, 11, -1, 11, 61, 62, 12, -1, 12, 62, 63, 13, -1, 13, 63, 64, 14, -1, 14, 64, 65, 15, -1, 15, 65, 66, 16, -1, 16, 66, 67, 17, -1, 17, 67, 68, 18, -1, 18, 68, 69, 19, -1, 19, 69, 70, 20, -1, 20, 70, 71, 21, -1, 21, 71, 72, 22, -1, 22, 72, 73, 23, -1, 23, 73, 74, 24, -1
+        ]
+        texCoordIndex [
+          50, 51, 76, 75, -1, 51, 52, 77, 76, -1, 52, 53, 78, 77, -1, 53, 54, 79, 78, -1, 54, 55, 80, 79, -1, 55, 56, 81, 80, -1, 56, 57, 82, 81, -1, 57, 58, 83, 82, -1, 58, 59, 84, 83, -1, 59, 60, 85, 84, -1, 60, 61, 86, 85, -1, 61, 62, 87, 86, -1, 62, 63, 88, 87, -1, 63, 64, 89, 88, -1, 64, 65, 90, 89, -1, 65, 66, 91, 90, -1, 66, 67, 92, 91, -1, 67, 68, 93, 92, -1, 68, 69, 94, 93, -1, 69, 70, 95, 94, -1, 70, 71, 96, 95, -1, 71, 72, 97, 96, -1, 72, 73, 98, 97, -1, 73, 74, 99, 98, -1, 0, 25, 26, 1, -1, 1, 26, 27, 2, -1, 2, 27, 28, 3, -1, 3, 28, 29, 4, -1, 4, 29, 30, 5, -1, 5, 30, 31, 6, -1, 6, 31, 32, 7, -1, 7, 32, 33, 8, -1, 8, 33, 34, 9, -1, 9, 34, 35, 10, -1, 10, 35, 36, 11, -1, 11, 36, 37, 12, -1, 12, 37, 38, 13, -1, 13, 38, 39, 14, -1, 14, 39, 40, 15, -1, 15, 40, 41, 16, -1, 16, 41, 42, 17, -1, 17, 42, 43, 18, -1, 18, 43, 44, 19, -1, 19, 44, 45, 20, -1, 20, 45, 46, 21, -1, 21, 46, 47, 22, -1, 22, 47, 48, 23, -1, 23, 48, 49, 24, -1, 100, 101, 126, 125, -1, 101, 102, 127, 126, -1, 102, 103, 128, 127, -1, 103, 104, 129, 128, -1, 104, 105, 130, 129, -1, 105, 106, 131, 130, -1, 106, 107, 132, 131, -1, 107, 108, 133, 132, -1, 108, 109, 134, 133, -1, 109, 110, 135, 134, -1, 110, 111, 136, 135, -1, 111, 112, 137, 136, -1, 112, 113, 138, 137, -1, 113, 114, 139, 138, -1, 114, 115, 140, 139, -1, 115, 116, 141, 140, -1, 116, 117, 142, 141, -1, 117, 118, 143, 142, -1, 118, 119, 144, 143, -1, 119, 120, 145, 144, -1, 120, 121, 146, 145, -1, 121, 122, 147, 146, -1, 122, 123, 148, 147, -1, 123, 124, 149, 148, -1, 100, 125, 126, 101, -1, 101, 126, 127, 102, -1, 102, 127, 128, 103, -1, 103, 128, 129, 104, -1, 104, 129, 130, 105, -1, 105, 130, 131, 106, -1, 106, 131, 132, 107, -1, 107, 132, 133, 108, -1, 108, 133, 134, 109, -1, 109, 134, 135, 110, -1, 110, 135, 136, 111, -1, 111, 136, 137, 112, -1, 112, 137, 138, 113, -1, 113, 138, 139, 114, -1, 114, 139, 140, 115, -1, 115, 140, 141, 116, -1, 116, 141, 142, 117, -1, 117, 142, 143, 118, -1, 118, 143, 144, 119, -1, 119, 144, 145, 120, -1, 120, 145, 146, 121, -1, 121, 146, 147, 122, -1, 122, 147, 148, 123, -1, 123, 148, 149, 124, -1
+        ]
+        creaseAngle 1.5
+      }
+    }
+  ]
+  name "pipe"
+  model "pipe"
+  boundingObject Group {
+    children [
+      Transform {
+        translation 0.02957370687662879 0.0038934523732257233 5.282826142479546e-05
+        rotation 0 0 1 1.7016960206944713
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.02755830762584794 0.011415024774676107 -2.8471417931998846e-05
+        rotation 0 0 1 1.9634954084936207
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.02366485525262222 0.01815868210195268 -8.290005820393909e-05
+        rotation 0 0 1 2.2252947962927703
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.018158682101952685 0.023664855252622217 9.214123440630642e-05
+        rotation 0 0 1 2.4870941840919194
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.011415024774676109 0.02755830762584794 -3.074869696788174e-05
+        rotation 0 0 1 2.748893571891069
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.0038934523732257276 0.02957370687662879 1.2310690421503213e-05
+        rotation 0 0 1 3.0106929596902186
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.003893452373225724 0.02957370687662879 4.137230762078212e-05
+        rotation 0 0 1 3.2724923474893677
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.011415024774676106 0.02755830762584794 -8.73042575898324e-05
+        rotation 0 0 1 3.5342917352885173
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.018158682101952674 0.023664855252622224 -6.21632672645609e-05
+        rotation 0 0 1 3.7960911230876664
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.023664855252622213 0.01815868210195269 -2.783984111784943e-06
+        rotation 0 0 1 4.057890510886816
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.027558307625847933 0.011415024774676121 5.2171430121149424e-05
+        rotation 0 0 1 4.319689898685965
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.02957370687662879 0.003893452373225736 7.766166792283462e-05
+        rotation 0 0 1 4.581489286485114
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.029573706876628792 -0.003893452373225716 -4.915084535782608e-05
+        rotation 0 0 1 4.843288674284264
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.027558307625847947 -0.01141502477467609 -6.768795059251492e-05
+        rotation 0 0 1 5.105088062083413
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.023664855252622224 -0.018158682101952674 3.6983426629509133e-05
+        rotation 0 0 1 5.366887449882563
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.01815868210195269 -0.02366485525262221 1.3289124565668376e-05
+        rotation 0 0 1 5.6286868376817125
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.011415024774676123 -0.027558307625847933 -9.695119839615813e-05
+        rotation 0 0 1 5.890486225480862
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation -0.0038934523732257506 -0.029573706876628785 9.846701612871982e-05
+        rotation 0 0 1 6.152285613280011
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.003893452373225714 -0.029573706876628792 -2.9743142708727288e-05
+        rotation 0 0 1 6.414085001079161
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.011415024774676088 -0.027558307625847947 1.3981527923436632e-05
+        rotation 0 0 1 6.67588438887831
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.01815868210195266 -0.023664855252622234 2.229729427679148e-05
+        rotation 0 0 1 6.937683776677459
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.02366485525262221 -0.01815868210195269 1.2108284956710636e-05
+        rotation 0 0 1 7.199483164476609
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.027558307625847933 -0.011415024774676125 -8.696336668511431e-05
+        rotation 0 0 1 7.461282552275758
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+      Transform {
+        translation 0.029573706876628785 -0.003893452373225753 4.916758234307661e-05
+        rotation 0 0 1 7.723081940074907
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.010442095377604125 0.01965779445495242 0.3
+            }
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+  }
+}
+WoodenBox {
+  translation 2.96521 -3.28714 0.3
+}
+WoodenBox {
+  translation 2.35329 -3.28656 0.3
+  name "wooden box(1)"
+}
+WoodenBox {
+  translation 2.35329 -3.28656 0.9
+  name "wooden box(2)"
+}
+WoodenBox {
+  translation 2.97329 -3.28656 0.9
+  name "wooden box(3)"
+}
+FireExtinguisher {
+  translation -5.123450002167625 -5.143850015039682 -0.004708800145291514
+  rotation 0.9897802935411524 -0.1426007381383085 -1.039262218323541e-09 0.007893061276697514
+}
+Table {
+  translation 2.05155 1.88815 0
+  rotation 0 0 1 1.57
+}
+Solid {
+  translation 2.46 1.51001 0.72079
+  rotation 0 0 1 1.5708
+  scale 0.015 0.015 0.015
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.1 0.1 0.1
+        roughness 0.1
+        metalness 0.1
+      }
+      geometry Mesh {
+        url [
+          "../STL_files/Ender 3.stl"
+        ]
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+  locked TRUE
+}
+Table {
+  translation -4.04852 -0.68386 0
+  name "table(1)"
+}
+Table {
+  translation -4.06682 1.14437 -1.33227e-15
+  name "table(3)"
+}
+Table {
+  translation -0.168007 3.29728 0
+  name "table(2)"
+  trayAppearance VarnishedPine {
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+    IBLStrength 10
+  }
+}
+Table {
+  translation 0.240864 1.893 0
+  rotation 0 0 1 1.57
+  name "table(4)"
+  trayAppearance VarnishedPine {
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+    IBLStrength 10
+  }
+}
+Solid {
+  translation -3.66 -1.16 0.770372
+  rotation 0 0 1 1.5708
+  scale 0.008 0.008 0.008
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "../STL_files/drawer1.stl"
+        ]
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+}
+Door {
+  translation -5.6651 -6.60923 2.66454e-15
+  position -1.139049985797786e-09
+}
+IntermodalOfficeContainer {
+  translation 0.697281 -10.2307 2.84217e-14
+}
+RectangleArena {
+  translation 2.71753 -4.70171 -3.55271e-14
+  floorSize 60 60
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Solid {
+  translation 1.98 1.86 0.85
+  children [
+    Shape {
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.5 0.6 0.15
+  }
+}
+OfficeChair {
+  translation -3.129530000485516 1.0801400000172767 -0.00012897002720582695
+  rotation 6.327037536348951e-05 -4.4887350054444553e-07 0.9999999979983291 3.1415900000240673
+}
+OfficeChair {
+  translation 0.529845114021313 3.18566986822095 4.94822457324795e-05
+  rotation 0.0010538026925732467 1.2328574224572877e-06 0.9999994447490285 3.1415901921098497
+  name "office chair(1)"
+}
+Monitor {
+  translation -4.46017 1.05845 0.76
+}
+Monitor {
+  translation -4.46017 1.70845 0.76
+  rotation 1 0 0 4.692820414042842e-06
+  name "monitor(1)"
+}
+Robot {
+  translation 0.42322 -1.92786 0.0925692
+  rotation 0.008279280608155285 -0.009317268045864637 0.9999223179971397 1.5708723378062173
+  children [
+    UR5e {
+      translation 0.25 0 0.4
+      controller "ur5_webot_ctrl"
+      toolSlot [
+        Connector {
+          model "robot_connect"
+          autoLock TRUE
+          distanceTolerance 0.2
+        }
+        Robotiq3fGripper {
+        }
+      ]
+      staticBase FALSE
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 0.5
+        metalness 0.2
+      }
+      geometry Mesh {
+        url [
+          "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/summit_xls_chassis.dae"
+        ]
+      }
+    }
+    Solid {
+      translation 0 0 0.39062
+      children [
+        Shape {
+          appearance DEF DARKGREY PBRAppearance {
+            baseColor 0.5 0.5 0.5
+            metalness 0.9
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/summit_xls_chapas_inox_tapas.stl"
+            ]
+          }
+        }
+      ]
+      name "base_chapa"
+    }
+    Solid {
+      translation 0.359 0 0.30062
+      children [
+        Shape {
+          appearance USE DARKGREY
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/summit_xls_chapas_inox_tapas_front.stl"
+            ]
+          }
+        }
+      ]
+      name "base_chapa_front"
+    }
+    Solid {
+      translation 0 0.28931 0.29062
+      children [
+        DEF LOGO Shape {
+          appearance USE DARKGREY
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/robotnik_logo_chasis.stl"
+            ]
+          }
+        }
+      ]
+      name "base_logo_left"
+    }
+    Solid {
+      translation 0 -0.28931 0.29062
+      rotation 0 0 1 3.141593
+      children [
+        USE LOGO
+      ]
+      name "base_logo_right"
+    }
+    Solid {
+      translation 0.345 0 0
+      rotation 0 0 -1 1.570796
+      children [
+        USE LOGO
+      ]
+      name "base_logo_front"
+    }
+    Solid {
+      translation -0.345 0 0
+      rotation 0 0 1 1.570796
+      children [
+        USE LOGO
+      ]
+      name "base_logo_rear"
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -213.42455854705796
+        axis 0 1 0
+        anchor 0.2225 -0.2045 0
+      }
+      device [
+        RotationalMotor {
+          name "front_right_wheel_joint"
+          acceleration 20
+          controlPID 3 0 0
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "front_right_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.22314380396466474 -0.20449996661010172 0.0031201206762478183
+        rotation 0.9897111242743 0.10117266253847605 -0.1011730341670983 1.5811419875369446
+        children [
+          DEF INTERIOR_WHEEL Group {
+            children [
+              Shape {
+                appearance DEF WHEEL_APPEARANCE PBRAppearance {
+                  baseColor 0.381347 0.381347 0.381347
+                  metalness 0.4
+                  emissiveColor 0.202 0.202 0.202
+                }
+                geometry Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/omni_wheel_rims_int.dae"
+                  ]
+                }
+              }
+              Shape {
+                appearance DEF ROLLERS_APPEARANCE PBRAppearance {
+                  baseColor 0.08132 0.08132 0.08132
+                  roughness 0.8
+                  metalness 0
+                }
+                geometry Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/omni_wheel_rollers_int.dae"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+        name "front_right_wheel_link"
+        contactMaterial "InteriorWheelMat"
+        boundingObject DEF WHEEL_BO Cylinder {
+          height 0.08
+          radius 0.123
+        }
+        physics Physics {
+          density -1
+          mass 6.5
+          centerOfMass [
+            0 0 0
+          ]
+          inertiaMatrix [
+            0.0303095 0.05241925 0.0303095
+            0 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 935.498581470067
+        axis 0 1 0
+        anchor 0.2225 0.2045 0
+      }
+      device [
+        RotationalMotor {
+          name "front_left_wheel_joint"
+          acceleration 20
+          controlPID 3 0 0
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "front_left_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.22045778873210523 0.20450003337390876 0.0024429478774319956
+        rotation -0.8897353438602345 0.32277720837787244 -0.32277839400693753 4.595818983808608
+        children [
+          DEF EXTERIOR_WHEEL Group {
+            children [
+              Shape {
+                appearance USE WHEEL_APPEARANCE
+                geometry Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/omni_wheel_rims_ext.dae"
+                  ]
+                }
+              }
+              Shape {
+                appearance USE ROLLERS_APPEARANCE
+                geometry Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/omni_wheel_rollers_ext.dae"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+        name "front_left_wheel_link"
+        contactMaterial "ExteriorWheelMat"
+        boundingObject USE WHEEL_BO
+        physics Physics {
+          density -1
+          mass 6.5
+          centerOfMass [
+            0 0 0
+          ]
+          inertiaMatrix [
+            0.0303095 0.05241925 0.0303095
+            0 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -216.4374180380474
+        axis 0 1 0
+        anchor -0.2225 0.2045 0
+      }
+      device [
+        RotationalMotor {
+          name "back_left_wheel_joint"
+          acceleration 20
+          controlPID 3 0 0
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "back_left_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.22352338932096272 0.2045000329443426 -0.002966319147152917
+        rotation 0.11781651214054904 -0.702180762784308 0.7021833420430045 2.907041744787073
+        children [
+          USE INTERIOR_WHEEL
+        ]
+        name "back_left_wheel_link"
+        contactMaterial "InteriorWheelMat"
+        boundingObject USE WHEEL_BO
+        physics Physics {
+          density -1
+          mass 6.5
+          centerOfMass [
+            0 0 0
+          ]
+          inertiaMatrix [
+            0.0303095 0.05241925 0.0303095
+            0 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 997.4980322435706
+        axis 0 1 0
+        anchor -0.2225 -0.2045 0
+      }
+      device [
+        RotationalMotor {
+          name "back_right_wheel_joint"
+          acceleration 20
+          controlPID 3 0 0
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "back_right_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.22563683993500033 -0.20449996703966933 0.00013215791689291258
+        rotation -0.5936554946291508 0.5690214297491812 -0.56902351988544 4.2130721538412175
+        children [
+          USE EXTERIOR_WHEEL
+        ]
+        name "back_right_wheel_link"
+        contactMaterial "ExteriorWheelMat"
+        boundingObject USE WHEEL_BO
+        physics Physics {
+          density -1
+          mass 6.5
+          centerOfMass [
+            0 0 0
+          ]
+          inertiaMatrix [
+            0.0303095 0.05241925 0.0303095
+            0 0 0
+          ]
+        }
+      }
+    }
+    Solid {
+      translation 0.35 0 0.09
+      name "base_docking_contact"
+    }
+    DEF IMU Transform {
+      translation 0.127 -0.129 0.212
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.5 0.5 0.5
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.001 0.001 0.001
+          }
+        }
+        Accelerometer {
+        }
+        Gyro {
+        }
+        Compass {
+        }
+      ]
+    }
+    DEF RGBD Solid {
+      translation 0.3585 0 0.29062
+      children [
+        Solid {
+          translation 0.007 0 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.3 0.3 0.3
+                roughness 1
+                roughnessMap ImageTexture {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/plastic/plastic_rough_roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/plastic/plastic_rough_normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/orbbec_astra.dae"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                roughnessMap ImageTexture {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/plastic/plastic_rough_roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/plastic/plastic_rough_normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotnik/summit_xl_steel/protos/meshes/orbbec_astra_cover.dae"
+                ]
+              }
+            }
+          ]
+          name "front_rgbd_camera_link"
+          boundingObject Transform {
+            translation -0.02 0 0.015
+            children [
+              Box {
+                size 0.04 0.165 0.03
+              }
+            ]
+          }
+        }
+        Camera {
+          translation 0 0 0.015
+          name "rgb_camera"
+          fieldOfView 1.0472
+          width 1280
+          height 720
+        }
+        RangeFinder {
+          translation 0 0 0.015
+          name "depth_camera"
+          fieldOfView 1.0472
+          width 640
+          height 480
+          minRange 0.6
+          maxRange 8
+        }
+      ]
+    }
+    GPS {
+      translation -0.365 -0.167 0.302
+    }
+    Transform {
+      translation 0 0 0.39062
+    }
+    Transform {
+      translation 0.2865 -0.20894 0.193
+      rotation 0.9238766724085287 -0.3826903371909772 0 3.14159
+    }
+    Transform {
+      translation -0.2865 0.20894 0.193
+      rotation 0.3826903371909772 0.9238766724085287 0 3.14159
+    }
+  ]
+  name "Summit-XL Steel"
+  boundingObject Group {
+    children [
+      Transform {
+        translation 0 0 0.3
+        children [
+          Box {
+            size 0.719 0.57861 0.18
+          }
+        ]
+      }
+      Transform {
+        translation 0 0 0.176
+        children [
+          Box {
+            size 0.524 0.27 0.06495
+          }
+        ]
+      }
+      Transform {
+        translation 0 0 0.046225
+        children [
+          Box {
+            size 0.69 0.27 0.1945
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 125
+    centerOfMass [
+      0 0 0
+    ]
+    inertiaMatrix [
+      1.391 6.853 6.125
+      0.004 0 0
+    ]
+  }
+  controller "base_controller"
+  controllerArgs [
+    ""
+  ]
+}
